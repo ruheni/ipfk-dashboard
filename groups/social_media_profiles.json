@@ -1,0 +1,22 @@
+{
+  "info": {
+    "name": "social_media_profiles",
+    "description": "This group will contain the social media profiles of the members of Institute of Public Finance Kenya"
+  },
+  "connection": "default",
+  "collectionName": "groups_social_media_profiles",
+  "attributes": {
+    "LinkedIn": {
+      "required": true,
+      "type": "string"
+    },
+    "Twitter": {
+      "required": true,
+      "type": "string"
+    },
+    "Facebook": {
+      "required": true,
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "connection": "default",
+  "collectionName": "contactformsubmissions",
+  "info": {
+    "name": "contactformsubmission",
+    "description": "contact form submissions will be stored in this section"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "required": true,
+      "type": "string"
+    },
+    "email": {
+      "required": true,
+      "type": "email"
+    },
+    "feedback": {
+      "type": "text"
+    }
+  }
+}

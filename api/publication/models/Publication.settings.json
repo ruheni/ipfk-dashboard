@@ -1,44 +1,38 @@
 {
   "connection": "default",
-  "collectionName": "articles",
+  "collectionName": "publications",
   "info": {
-    "name": "articles",
-    "description": ""
+    "name": "publication",
+    "description": "All of the publications published by the IPF Kenya will be stored in this section"
   },
   "options": {
     "increments": true,
-    "timestamps": [
-      "created_at",
-      "updated_at"
-    ],
+    "timestamps": true,
     "comment": ""
   },
   "attributes": {
-    "article_title": {
+    "Title": {
       "required": true,
       "type": "string"
     },
-    "article_cover_image": {
+    "Date": {
+      "required": true,
+      "type": "date"
+    },
+    "publication_document": {
       "model": "file",
       "via": "related",
       "plugin": "upload",
       "required": true
     },
-    "article_description": {
-      "required": true,
-      "type": "text"
-    },
-    "article_publish_date": {
-      "required": true,
-      "type": "date"
-    },
-    "article_content": {
+    "publication_description": {
+      "default": "N/A",
       "required": true,
       "type": "richtext"
     },
     "isPublished": {
-      "default": true,
       "required": true,
+      "default": true,
       "type": "boolean"
     }
   }

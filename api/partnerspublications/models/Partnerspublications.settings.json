@@ -1,0 +1,39 @@
+{
+  "connection": "default",
+  "collectionName": "partnerspublications",
+  "info": {
+    "name": "partnerspublications",
+    "description": "IPF Kenya's publications will be stored in this section of the page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "publication_title": {
+      "required": true,
+      "type": "string"
+    },
+    "published_date": {
+      "required": true,
+      "type": "date"
+    },
+    "publication_document": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "isPublished": {
+      "required": true,
+      "default": true,
+      "type": "boolean"
+    },
+    "publication_description": {
+      "default": "n/a",
+      "required": true,
+      "type": "richtext"
+    }
+  }
+}

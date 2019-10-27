@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "media",
+  "info": {
+    "name": "media",
+    "description": "Uploaded images to be displayed on the gallery page will be contained in this section"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "Title": {
+      "required": true,
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "image_description": {
+      "required": true,
+      "type": "richtext"
+    }
+  }
+}

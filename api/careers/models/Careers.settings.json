@@ -1,0 +1,32 @@
+{
+  "connection": "default",
+  "collectionName": "careers",
+  "info": {
+    "name": "careers",
+    "description": "The list of opportunities available at Institute of Public Finance Kenya will be listed here. \nIf the isOpen is toggled to true, the opportunity will be listed as available on the website"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "position_title": {
+      "required": true,
+      "type": "string"
+    },
+    "date_posted": {
+      "required": true,
+      "type": "date"
+    },
+    "isOpen": {
+      "default": true,
+      "required": true,
+      "type": "boolean"
+    },
+    "position_job_description": {
+      "required": true,
+      "type": "richtext"
+    }
+  }
+}
